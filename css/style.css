@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+html {
+  font-size: 65%;
+}
+body {
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 30rem;
+
+  background-color: #fff;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.order-image {
+  width: 100%;
+}
+.order-details {
+  padding: 2.8rem 2.8rem;
+}
+.order-heading {
+  font-size: 1.8em;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+}
+.order-text {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: hsl(224, 23%, 55%);
+
+  padding: 0 1.2rem;
+  margin-bottom: 1.8rem;
+}
+.plan-details {
+  background-color: hsl(225, 100%, 98%);
+  padding: 1.2rem 1.2rem;
+
+  display: grid;
+  grid-template-columns: 5rem 1fr 5rem;
+  align-items: center;
+  justify-items: center;
+  column-gap: 1rem;
+
+  border-radius: 9px;
+
+  margin-bottom: 2rem;
+}
+.plan-name {
+  font-size: 1.1rem;
+  font-weight: 900;
+  justify-self: start;
+}
+.plan-charge {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  font-size: 1.1rem;
+  justify-self: start;
+}
+.icon {
+  height: 3.6rem;
+  grid-row: 1 / span 2;
+}
+.change {
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+}
+.change:hover {
+  color: rgba(56, 41, 224, 0.7);
+}
+.payment-button {
+  width: 100%;
+  padding: 1rem 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 5px;
+
+  margin-bottom: 1.5rem;
+}
+.payment-button:hover {
+  background-color: rgba(56, 41, 224, 0.7);
+  cursor: pointer;
+}
+.cancel {
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+}
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
